@@ -1,0 +1,18 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Code</title>
+</head>
+<body>
+<script type="text/javascript">
+	function generate() {
+		var name=document.getElementById('name').value;
+		var ran=Math.floor((Math.random() * 7) + 1)+4;
+		document.getElementById('val').innerHTML=name+" "+ran;
+	}
+</script>
+<input type="text" id="name" />
+<button onclick="generate()">Generate</button>
+<div id="val"></div>
+</body>
+</html>
